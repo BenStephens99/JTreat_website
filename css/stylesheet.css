@@ -285,8 +285,11 @@ button:hover {
 }
 
 footer {
-    padding: 50px;
+    padding: 25px;
     text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1em;
 }
 
 #contact {
