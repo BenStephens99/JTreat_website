@@ -16,7 +16,7 @@
             <li><a href="#booking">Prices and Booking</a></li>
         </nav>
         <div id="logo">
-            <img src="./images/JTreatLogo.png">
+            <img src="./images/JTreatLogo_white.png">
         </div>
         <nav>
             <li><a href="#contact">Contact</a></li>
@@ -78,11 +78,38 @@
 
 
         <div class="section" id="booking">
-            <p>booking</p>
+            <h1 class="title">Pricing</h1>
+            <div class="fullWidthContainer">
+                <div class="textHolder">
+                    <h1>25 Minute Consultation</h1>
+                    <p>£12.50</p>
+                </div>
+                <div class="textHolder">
+                    <h1>50 Minute Consultation</h1>
+                    <p>£19.50</p>
+                </div>
+            </div>
+
         </div>
 
         <div class="section" id="contact">
-            <p>contact</p>
+            <form action="https://formspree.io/f/maykypyz" method="POST">
+
+                <div class="header">
+                    <h1>Send me a message</h1>
+                </div>
+
+                <fieldset>
+
+                    <div class="textBoxes">
+                        <input type="text" name="name" id="name" placeholder="Name" required />
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                        <input type="tel" name="tel" id="tel" tel placeholder="Phone" />
+                    </div>
+                    <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
+                    <button id="submitButton" type="submit"> Submit </button>
+                </fieldset>
+            </form>
         </div>
 
 
