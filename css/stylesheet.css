@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 :root {
-    --white: #ffffff;
+    --white: rgb(255, 255, 255);
     --red: rgb(255, 14, 14); 
     --blur: 8px;
+    --grey: rgb(255, 255, 255);
 }
 
+
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 
@@ -16,8 +18,12 @@ main {
     margin: auto;
 }
 
+main p {
+    font-size: 1.3em;
+}
+
 #aboutMe, #booking, #findUs, #contact {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 80px;
 }
 
 body {
@@ -28,14 +34,14 @@ body {
 
 header {
     width: 100%;
-    margin: auto;
     display: flex;
     position: fixed;
     top: 0;
     z-index: 1;
     color: var(--white);
     transition: 1s;
-
+    background-color: #ffffff;
+    color: black;
 }
 
 header nav {
@@ -49,6 +55,16 @@ header nav li {
     display: inline;
     list-style: none;
     margin: 10%;
+    font-size: smaller;
+}
+
+h1{
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2em;
 }
 
 a {
@@ -60,30 +76,40 @@ a:hover {
     cursor: pointer;
 }
 
-nav a {
+a {
     color: inherit;
     text-decoration: none; 
     position: relative;
 }
 
-nav a:after {
+a:after {
     content: "";
     position: absolute;
     height: 3px;
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: var(--red)
 }
 
- nav a:hover:after { 
+
+a:hover:after { 
     width: 100%
 }
 
-#title {
-    height: 75px;
-    margin: 10px;
+.fullScreenBanner a:hover:after {
+    width: 0;
+}
+
+#logo {
+    height: 70px;
+    margin: 5px;
+}
+
+#logo img {
+    height: 100%;
+    width: auto;
 }
 
 .fullScreenBanner {
@@ -155,8 +181,15 @@ button:hover {
 .section {
     width: 100%;
     display: flex;
-    padding: 5em 0;
-    border-bottom: 1px solid rgb(223, 223, 223);
+    flex-wrap: wrap;
+    padding: 3em 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.section .title {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 1em 0;
 }
 
 .section .imageHolder {
@@ -169,11 +202,38 @@ button:hover {
     margin: auto;
 }
 
+.section .imageHolder p {
+    margin: 0;
+    padding: 1em 0;
+    font-size: 1em;
+    border: 1px solid var(--grey);
+}
 
 .section .textHolder {
     width: 450px;
     margin-right: 1em;
+    padding: 1em 0;
     margin-left: auto;
+    margin-top: 0;
+    border: 1px solid var(--grey);
+    text-align: center;
+}
+
+#reviews {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#reviews a {
+    font-size: smaller;
+   
+}
+
+.section .review {
+    width: 600px;
+    margin: auto;
+    padding: 5px 0;
 }
 
 .textHolder h2 {
@@ -192,9 +252,19 @@ button:hover {
 
 .textHolder ul {
     margin: 0;
-    padding-left: 1em;
-    list-style:circle;
+    padding-left: 0;
+    list-style:none;
+    text-align: center;
 }
+.textHolder ul li {
+    font-size: 1.2em;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    margin: 10px 0 ;
+    padding: 10px 0;
+}
+
+
+
 
 
 footer {
@@ -202,21 +272,10 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
     :root {
         --blur: 6px;
       }
-    
-    header {
-        background-color: var(--white);
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    
-    header nav{
-        display: none;
-    }
     
     .fullScreenBanner img.background {
         height: 100%;
@@ -237,5 +296,16 @@ footer {
 
     .section .textHolder {
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) { 
+    header nav {
+        display: none;
+    }
+
+    .section .review { 
+        width: 90%;
     }
 }

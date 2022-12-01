@@ -2,16 +2,16 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
 
-  if (window.innerWidth > 850) {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("header").style.backgroundColor = "white";
-      document.getElementById("header").style.color = "black";
+    if (document.body.scrollTop > screen.height - 150 || document.documentElement.scrollTop > screen.height - 150) {
+      document.getElementById("header").style.backgroundColor = "black";
+      document.getElementById("header").style.color = "white";
+      document.getElementById("logo").innerHTML = '<img src="./images/JTreatLogo_white.png" id="title"></img>'
+
 
     } else {
-      document.getElementById("header").style.backgroundColor = "rgba(255, 255, 255, 0)";
-      document.getElementById("header").style.color = "white";
-
+      document.getElementById("header").style.backgroundColor = "white";
+      document.getElementById("header").style.color = "black";
+      document.getElementById("logo").innerHTML = '<img src="./images/JTreatLogo.png" id="title"></img>';
     }
-  }
 
 }
