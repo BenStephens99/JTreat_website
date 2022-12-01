@@ -348,9 +348,13 @@ footer {
         --blur: 5px;
     }
 
+    header nav li {
+        margin: 10px;
+    }
+
     .fullScreenBanner img.background {
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 100%;
     }
 
     .section {
@@ -408,9 +412,21 @@ footer {
 }
 
 
+@media screen and (max-width: 850px) { 
+    .fullScreenBanner img.background {
+        height: 100%;
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    header nav {
+        width: 100%;
+    }
+    
     header nav li {
-        display: none;
+        margin: 5px;
+        padding: 0;
     }
 
     .section .review {
