@@ -3,7 +3,7 @@
 :root {
     --white: rgb(255, 255, 255);
     --red: rgb(255, 14, 14); 
-    --blur: 8px;
+    --blur: 5px;
     --grey: rgb(255, 255, 255);
 }
 
@@ -42,21 +42,24 @@ header {
     transition: 1s;
     background-color: #ffffff00;
     color: white;
+    height: 65px;
 }
 
 header nav {
     margin: auto;
     text-align: center;
-    width: 40%;
+    width: 80%;
     text-transform: uppercase;
 }
 
 header nav li {
     display: inline;
     list-style: none;
-    margin: 10%;
+    margin: auto 5%;
+    padding: 0 20px;
     font-size: smaller;
 }
+
 
 h1{
     font-weight: 100;
@@ -138,7 +141,6 @@ a:hover:after {
 
 .fullScreenBanner img.logo {
     width: 300px;
-    margin-bottom: 25px auto;
 }
 
 .fullScreenBanner h1 {
