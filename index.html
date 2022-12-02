@@ -6,6 +6,7 @@
     <title>Jtreat</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -21,7 +22,7 @@
     </header>
 
     <div class="fullScreenBanner">
-        <img class=background src="./images/treatmentroom1.jpg" alt="">
+        <img class=background src="./images/treatmentroom1.jpg" alt="" id="bannerBackground">
         <div class="content">
             <img class="logo" src="./images/JTreatLogo_white_highRes.png">
             <p id="AbercanNewport">Abercarn, Newport</p>
@@ -31,34 +32,15 @@
 
     <main>
 
-        <div class="section" id="reviews">
-            <div class="review">
-                <P>"Amazing treatment, very satisfying and Beneficial.
-                    Would highly recommend for aches and pains."</P>
-                <p> &#11088 &#11088 &#11088 &#11088 &#11088 </p>
-            </div>
-            <div class="review">
-                <P>"Great advice, friendly and helped with some shoulder/neck issues!"</P>
-                <p> &#11088 &#11088 &#11088 &#11088 &#11088 </p>
-            </div>
-
-            <div class="review">
-                <P>"Fair play, thought I got loose on the weekends but not as loose as
-                    my quad was after seeing Jack. Service with a smile. Would recommend"</P>
-                <p> &#11088 &#11088 &#11088 &#11088 &#11088 </p>
-            </div>
-
-            <a href="https://www.facebook.com/JtreatPR" target="_blank">Leave a review</a>
-        </div>
 
 
-        <div class="section" id="aboutMe">
+        <div class="section" class="greyBackground" id="aboutMe">
             <h1 class="title">Who am I?</h1>
             <div class="textHolder">
                 <h2>Jack Morris</h2>
                 <ul class="qualification">
-                    <li>Sports Conditioning, Rehabilitation and Massage, BSc (Hons) </li>
-                    <li>ITEC certified Sports Massage Therapist.</li>
+                    <li>- Sports Conditioning, Rehabilitation and Massage, BSc (Hons) </li>
+                    <li>- ITEC certified Sports Massage Therapist.</li>
                 </ul>
                 <p>Jack Morris is a fully qualified physiotherapist and
                     a keen rugby player and cyclist, and understands first
@@ -66,7 +48,6 @@
             </div>
             <div class="imageHolder">
                 <img src="./images/JackAndJack.jpg" alt="Jack Morris and Jack Marshman">
-                <p>Jack Morris (Right) after treating UFC fighter Jack Marshman.</p>
             </div>
         </div>
 
@@ -75,11 +56,11 @@
             <h1 class="title">Pricing</h1>
             <div class="fullWidthContainer">
                 <div class="textHolder">
-                    <h1>25 Minute Consultation</h1>
+                    <h2>25 Minute Consultation</h2>
                     <p>£12.50</p>
                 </div>
                 <div class="textHolder">
-                    <h1>50 Minute Consultation</h1>
+                    <h2>50 Minute Consultation</h2>
                     <p>£19.50</p>
                 </div>
             </div>
@@ -97,7 +78,7 @@
 
                     <div class="textBoxes">
                         <input type="text" name="name" id="name" placeholder="Name" required />
-                        <input type="email" name="email" id="email" placeholder="Email" required />
+                        <input type="email" name="email" id="email" placeholder="Email" />
                         <input type="tel" name="tel" id="tel" tel placeholder="Phone" />
                     </div>
                     <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
@@ -106,6 +87,25 @@
             </form>
         </div>
 
+        <div class="section" id="reviews">
+            <div class="review">
+                <P>"Amazing treatment, very satisfying and Beneficial.
+                    Would highly recommend for aches and pains."</P>
+                <p> &#11088 &#11088 &#11088 &#11088 &#11088 </p>
+            </div>
+            <div class="review">
+                <P>"Great advice, friendly and helped with some shoulder/neck issues!"</P>
+                <p> &#11088 &#11088 &#11088 &#11088 &#11088 </p>
+            </div>
+            <div class="review">
+                <P>"Fair play, thought I got loose on the weekends but not as loose as
+                    my quad was after seeing Jack. Service with a smile. Would recommend"</P>
+                <p> &#11088 &#11088 &#11088 &#11088 &#11088 </p>
+            </div>
+            <a href="https://www.facebook.com/JtreatPR" target="_blank">Leave a review</a>
+        </div>
+
+
 
         <div class="section" id="findUs">
             
@@ -113,6 +113,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15421.489527495614!2d-3.1411936831092953!3d51.64246599930709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e201f52f8bd05%3A0x653f369623446c16!2sExert%20Fitness!5e0!3m2!1sen!2suk!4v1669923662195!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+
+        
 
 
 
