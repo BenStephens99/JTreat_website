@@ -7,12 +7,9 @@
     --grey: rgb(211, 211, 211);
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
-
 
 main {
     width: 100%;
@@ -26,7 +23,7 @@ main p {
 
 #header,
 .section {
-    scroll-margin-top: 30px;
+    scroll-margin-top: 0;
 }
 
 body {
@@ -58,10 +55,19 @@ header nav {
 header nav li {
     display: inline;
     list-style: none;
-    margin: auto 5%;
+    margin: auto 100px;
     padding: 0 20px;
     font-size: smaller;
     font-weight: 400;
+}
+
+header h1 {
+    margin: 15px;
+    font-size: 1.7em;
+}
+
+#menuIcon {
+    display: none;
 }
 
 h1 {
@@ -108,6 +114,7 @@ a:hover:after {
     width: 0;
 }
 
+
 #logo {
     height: 70px;
     margin: 5px;
@@ -127,8 +134,8 @@ a:hover:after {
 
 .fullScreenBanner img.background {
     width: 100%;
-    filter: blur(var(--blur)) brightness(90%);
-    -webkit-filter: blur(var(--blur)) brightness(90%);
+    filter: blur(var(--blur)) brightness(30%);
+    -webkit-filter: blur(var(--blur)) brightness(30%);
     transform: scale(1.1);
 }
 
@@ -189,7 +196,8 @@ button:hover {
 }
 
 
-#booking, #reviews  {
+#booking,
+#reviews {
     background-color: white;
 }
 
@@ -197,6 +205,16 @@ button:hover {
     width: 1000px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+#booking #bookingTool {
+    margin: auto;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
 }
 
 .section .title {
@@ -241,28 +259,26 @@ button:hover {
     margin: auto;
     position: relative;
     border: 0;
+    width: 1000px;
 }
 
 
 #aboutMe .textHolder {
     font-size: smaller;
     text-align: left;
-    max-width: 300px;
+    max-width: 350px;
     margin: 0;
     margin-left: auto;
     background-color: white;
-    border-radius: 2em 0 0 2em;
     padding: 40px;
 }
 
-#aboutMe .imageHolder
-{
-    max-width: 300px;
+#aboutMe .imageHolder {
+    max-width: 350px;
     height: 380px;
     overflow: hidden;
     margin: 0;
     margin-right: auto;
-    border-radius: 0 2em 2em 0;
 }
 
 #reviews {
@@ -302,12 +318,12 @@ button:hover {
 .textHolder ul {
     margin: 0;
     padding-left: 0;
-    list-style: none ;
+    list-style: none;
 }
 
 .textHolder ul li {
     font-size: 1.2em;
-    border-bottom: 1px solid rgb(237, 237, 237);
+    border-bottom: 1px solid var(--red);
     margin: 10px 0;
     padding: 10px 0;
 }
@@ -342,7 +358,8 @@ footer {
 
 }
 
-input, textarea {
+input,
+textarea {
     font: inherit
 }
 
@@ -374,8 +391,32 @@ input, textarea {
     border: 1px solid #c4c4c4;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 0, 0);
+}
+
+@media screen and (max-width: 1500px) {
+    header nav li {
+        margin: auto 50px;
+    }
+}
 
 @media screen and (max-width: 1100px) {
     :root {
@@ -399,7 +440,7 @@ input, textarea {
     .section .imageHolder {
         width: 50%;
         min-width: 300px;
-        margin: auto !important;
+        margin: auto;
     }
 
     #aboutMe.section {
@@ -417,8 +458,9 @@ input, textarea {
         width: 60%;
         min-width: 300px;
         border-radius: 0;
+
     }
-    
+
     #aboutMe .imageHolder {
         margin: auto;
         position: relative;
@@ -426,7 +468,7 @@ input, textarea {
         left: 0;
         box-shadow: none;
         width: 60%;
-        min-width: 380px;
+        min-width: 300px;
         border-radius: 0;
     }
 
@@ -435,7 +477,7 @@ input, textarea {
         max-width: 100%;
         height: auto;
     }
-    
+
 
     #booking .fullWidthContainer {
         width: 90%;
@@ -483,26 +525,77 @@ input, textarea {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     header {
-        height: 55px;
+        height: auto;
         width: 100%;
+        padding: 0;
+        display: block;
+        position: fixed;
+        top: -250px;
+        transition: 1s;
+        background-color: black;
     }
-    
+
+    #menuIcon {
+        position: fixed;
+        display: block;
+        top: 15px;
+        right: 15px;
+        height: 50px;
+        width: 50px;
+        z-index: 3;
+        transition: 1s;
+    }
+
+    #menuIcon img {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+        transition: 1s;
+    }
+
     header nav {
         width: 100%;
         position: relative;
         margin: 0;
-        margin-top: 15px;
+        margin-top: 0;
+        display: block;
+        text-align: left;
+        padding: 0;
     }
-    
+
     header nav li {
-        margin:3%;
-        padding: 3px 0;
-        font-size: 11px;
+        display: block;
+        padding: 0;
+        font-size: 1em;
+        margin: 2em 1em;
+        margin: 2em;
+    }
+
+    header h1 {
+        display: none;
     }
 
     .section .review {
         width: 90%;
     }
+
+    #booking #bookingTool 
+    {
+        height: 400px;
+    }
+
+    #aboutMe .textHolder{
+        padding: auto;
+    }
+
+    /* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
 }
