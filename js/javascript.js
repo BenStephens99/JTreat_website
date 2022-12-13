@@ -16,7 +16,7 @@ function resizeBanner() {
 
 function scrollFunction() {
 
-  if (screen.width > 750) {
+  if (screen.width > 800) {
     if (document.body.scrollTop > screen.height - 300 || document.documentElement.scrollTop > screen.height - 300) {
       document.getElementById("header").style.backgroundColor = "black";
       document.getElementById("header").style.color = "white";
@@ -25,33 +25,31 @@ function scrollFunction() {
       document.getElementById("header").style.color = "white";
     }
   } else {
-    if (document.body.scrollTop > screen.height - 100 || document.documentElement.scrollTop > screen.height - 100) {
-      if (!menuOpen) {
-        document.getElementById("menuIcon").innerHTML = '<img src="./images/menuIconBlack.png" onclick="toggleMenu()"></img>'
-      }
-    } else {
-      document.getElementById("menuIcon").innerHTML = '<img src="./images/menuIconWhite.png" onclick="toggleMenu()"></img>'
+    if (menuOpen) {
+      closeMenu();
     }
   }
 }
 
 let menuOpen = false;
 function toggleMenu() {
-  if (screen.width < 750) {
+  if (screen.width < 800) {
     if (!menuOpen) {
-      document.getElementById("menuIcon").style.rotate = "90deg";
-      document.getElementById("header").style.top = "0";
-      document.getElementById("menuIcon").innerHTML = '<img src="./images/menuIconWhite.png" onclick="toggleMenu()"></img>';
-      menuOpen = true;
+      openMenu();
     } else {
-      document.getElementById("menuIcon").style.rotate = "0deg";
-      document.getElementById("header").style.top = "-250px";
-      if (document.body.scrollTop > screen.height - 100 || document.documentElement.scrollTop > screen.height - 100) {
-        setTimeout(function () {
-          document.getElementById("menuIcon").innerHTML = '<img src="./images/menuIconBlack.png" onclick="toggleMenu()"></img>'
-        }, 500);
-      }
-      menuOpen = false;
+      closeMenu();
     }
   }
+}
+
+function openMenu() {
+  document.getElementById("menuIcon").style.rotate = "90deg";
+  document.getElementById("header").style.top = "0";
+  menuOpen = true;
+}
+
+function closeMenu() {
+  document.getElementById("menuIcon").style.rotate = "0deg";
+  document.getElementById("header").style.top = "-250px";
+  menuOpen = false;
 }
