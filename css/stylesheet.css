@@ -287,8 +287,8 @@ button:hover {
     width: 1000px;
     height: auto;
     background-color: white;
-    border-radius: 1em;
     overflow: hidden;
+    
 }
 
 #aboutMe .card .textHolder {
@@ -560,16 +560,16 @@ textarea {
         top: -250px;
         transition: 1s;
         background-color: black;
-        padding-bottom: 80px;
+        padding-bottom: 75px;
     }
 
     #menuIcon {
         position: fixed;
         display: block;
-        top: 7.5px;
+        top: 10px;
         right: 15px;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         z-index: 3;
         transition: 1s;
     }
@@ -627,11 +627,12 @@ textarea {
 
     #aboutMe .card .textHolder{
         padding: 0;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        width: 90%;
+        width: 80%;
         height: auto;
         font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
     }
     #aboutMe .card .imageHolder {
         width: 100%;
