@@ -294,12 +294,12 @@ button:hover {
 #aboutMe .card .textHolder {
     padding: 2em;
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
     width: 50%;
 }
 
 #aboutMe .card .textHolder h2{
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 #reviews {
@@ -344,7 +344,7 @@ button:hover {
 
 .textHolder ul li {
     font-size: 1.2em;
-    border-bottom: 1px solid var(--red);
+    border-bottom: 2px solid var(--red);
     margin: 10px 0;
     padding: 10px 0;
 }
@@ -488,12 +488,16 @@ textarea {
         width: 60%;
         min-width: 300px;
         border-radius: 0;
+        overflow: hidden;
+
     }
 
     #aboutMe .imageHolder img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+        position: relative;
+        height: 100%;
+        width: auto;
+        left: 50%;
+        margin-left: -300px;
     }
 
 
@@ -618,6 +622,7 @@ textarea {
         display: block;
         height: auto;
         width: 90%;
+
     }
 
     #aboutMe .card .textHolder{
@@ -630,17 +635,21 @@ textarea {
     }
     #aboutMe .card .imageHolder {
         width: 100%;
-        max-width: 400px;
         height: auto;
         position: relative;
+        display: block;
+        background-color: red;
     }
 
     #aboutMe .card .imageHolder img {
+        position: relative;
+        display: block;
         height: auto;
         width: 100%;
+        max-width: 400px;
+        left: 0;
+        margin-left: 0;
         margin: auto;
-        display: block;
-
     }
 
     #booking .textHolder {
