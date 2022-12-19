@@ -246,12 +246,14 @@ button:hover {
 
 .section .imageHolder {
     width: 450px;
+    height: 100%;
     margin: auto;
 }
 
 .section .imageHolder img {
     width: 100%;
     margin: auto;
+    
 }
 
 .section .imageHolder p {
@@ -283,6 +285,10 @@ button:hover {
     position: relative;
     border: 0;
     width: 1000px;
+    height: auto;
+    background-color: white;
+    border-radius: 1em;
+    overflow: hidden;
 }
 
 #aboutMe .card .textHolder {
@@ -294,11 +300,6 @@ button:hover {
 
 #aboutMe .card .textHolder h2{
     font-size: 2em;
-}
-
-#aboutMe .card .imageHolder {
-    height: 100%;
-    width: 50%;
 }
 
 #reviews {
@@ -463,6 +464,9 @@ textarea {
         width: 95%;
     }
 
+    #aboutMe .card 
+    {width: 90%;}
+
     #aboutMe .textHolder {
         margin: 0 auto;
         position: relative;
@@ -617,14 +621,17 @@ textarea {
     }
 
     #aboutMe .card .textHolder{
-        padding: auto;
-        width: auto;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 90%;
         height: auto;
         font-size: 14px;
     }
     #aboutMe .card .imageHolder {
         width: 100%;
-        height: 300px;
+        max-width: 400px;
+        height: auto;
         position: relative;
     }
 
