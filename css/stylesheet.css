@@ -280,10 +280,9 @@ button:hover {
 #aboutMe .card {
     display: flex;
     margin: auto;
-    width: 800px;
-    height: 340px;
-    overflow: hidden;
-    background-color: white;
+    position: relative;
+    border: 0;
+    width: 1000px;
 }
 
 #aboutMe .card .textHolder {
