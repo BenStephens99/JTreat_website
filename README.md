@@ -1,3 +1,1 @@
-# JTreat_website
-
-<h2>https://www.jtreat.co.uk/</h2>
+<h1><a href="https://www.jtreat.co.uk">Jtreat.co.uk</a></h1>
