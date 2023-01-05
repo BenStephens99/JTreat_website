@@ -43,13 +43,21 @@ function toggleMenu() {
 }
 
 function openMenu() {
-  document.getElementById("menuIcon").style.rotate = "90deg";
+  document.getElementById("lineTop").style.top = "100%";
+  document.getElementById("lineTop").style.rotate = "45deg";
+  document.getElementById("lineBottom").style.rotate = "135deg";
+
   document.getElementById("header").style.top = "0";
   menuOpen = true;
 }
 
 function closeMenu() {
-  document.getElementById("menuIcon").style.rotate = "0deg";
+
+  document.getElementById("lineTop").style.rotate = "0deg";
+  document.getElementById("lineTop").style.top = "0px";
+
+  document.getElementById("lineBottom").style.rotate = "0deg";
+
   document.getElementById("header").style.top = "-250px";
   menuOpen = false;
 }

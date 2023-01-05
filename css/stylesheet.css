@@ -253,7 +253,7 @@ button:hover {
 .section .imageHolder img {
     width: 100%;
     margin: auto;
-    
+
 }
 
 .section .imageHolder p {
@@ -288,7 +288,7 @@ button:hover {
     height: auto;
     background-color: white;
     overflow: hidden;
-    
+
 }
 
 #aboutMe .card .textHolder {
@@ -298,7 +298,7 @@ button:hover {
     width: 50%;
 }
 
-#aboutMe .card .textHolder h2{
+#aboutMe .card .textHolder h2 {
     font-size: 1.6em;
 }
 
@@ -464,8 +464,9 @@ textarea {
         width: 95%;
     }
 
-    #aboutMe .card 
-    {width: 90%;}
+    #aboutMe .card {
+        width: 90%;
+    }
 
     #aboutMe .textHolder {
         margin: 0 auto;
@@ -566,22 +567,32 @@ textarea {
     #menuIcon {
         position: fixed;
         display: block;
-        top: 10px;
-        right: 15px;
-        height: 40px;
+        top: 20px;
+        right: 20px;
+        height: 20px;
         width: 40px;
         z-index: 3;
         transition: 1s;
     }
 
-    #menuIcon img {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
+    #menuIcon .line {
         display: block;
+        border-top: 2px solid white;
+        width: 100%;
+        position: absolute;
         transition: 1s;
+        left: 0;
+
     }
+
+    #menuIcon #lineTop {
+        top: 0;
+    }
+
+    #menuIcon #lineBottom {
+        top: 100%;
+    }
+
 
     header nav {
         width: 100%;
@@ -625,7 +636,7 @@ textarea {
 
     }
 
-    #aboutMe .card .textHolder{
+    #aboutMe .card .textHolder {
         padding: 0;
         width: 80%;
         height: auto;
@@ -634,6 +645,7 @@ textarea {
         margin-bottom: 30px;
 
     }
+
     #aboutMe .card .imageHolder {
         width: 100%;
         height: auto;
@@ -665,11 +677,11 @@ textarea {
         height: 60px;
         margin-top: 20px;
     }
-    
+
     /* width */
-::-webkit-scrollbar {
-    width: 0px;
-}
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 
 
 }
