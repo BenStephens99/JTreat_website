@@ -559,7 +559,7 @@ textarea {
         display: block;
         position: fixed;
         top: -250px;
-        transition: 1s;
+        transition: 0.8s;
         background-color: black;
         padding-bottom: 80px;
     }
@@ -572,7 +572,6 @@ textarea {
         height: 20px;
         width: 40px;
         z-index: 3;
-        transition: 1s;
     }
 
     #menuIcon .line {
@@ -580,7 +579,7 @@ textarea {
         border-top: 2px solid white;
         width: 100%;
         position: absolute;
-        transition: 1s;
+        transition: 0.25s;
         left: 0;
 
     }
