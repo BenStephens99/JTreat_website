@@ -1,0 +1,41 @@
+.booking .section-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+    text-align: center;
+}
+
+.booking-option {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.booking-option h3 {
+    font-size: large;
+    font-weight: lighter;
+}
+
+.booking button {
+    color: rgb(124, 124, 124);
+}
+
+.booking button:hover {
+    color: white;
+}
+
+@media screen and (max-width: 650px) {
+    .booking .section-content {
+        font-size: 1.2em;
+        grid-template-columns: 1fr;
+    }
+
+    .booking-option {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5em;
+    }
+    
+    
+}

@@ -1,0 +1,50 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    border: none;
+    max-width: 60em;
+}
+
+.textBoxes input {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 1em;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+}
+
+textarea {
+    padding: 1em;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+}
+
+form button {
+    color: rgb(109, 109, 109);
+    margin: 2em;
+}
+
+@media screen and (max-width: 650px) {
+
+    form fieldset {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    textarea {
+        min-height: 12em;
+    }
+}

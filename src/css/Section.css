@@ -1,0 +1,29 @@
+.section {
+    width: 100vw;
+    min-height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.section-content {
+    max-width: 80em;
+    margin: 0 1em;
+    height: 100%;
+    position: relative;
+}    
+
+.section:nth-child(2n+1) {
+    background-color: rgb(247, 247, 247);
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 2em;
+    font-weight: lighter;
+    font-size: 2em;
+}

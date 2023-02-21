@@ -1,0 +1,43 @@
+.aboutMe .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    column-gap: 3em;
+    align-items: center;
+}
+
+.aboutMe img {
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: 0 0 5px rgb(206, 204, 204)
+}
+
+.aboutMe .text{
+    display: flex;
+    flex-direction: column;
+    gap:  1em;
+}
+
+.text h3 {
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+.qualifications h3 {
+    font-size: 1em;
+    font-weight: 400;
+    border-bottom: 1px solid var(--red);
+}
+@media screen and (max-width: 650px) {
+    .aboutMe .section-content {
+        width: 90%;
+        grid-template-columns: 1fr;
+        row-gap: 3em;
+        justify-items: center;
+        font-size: 1.2em;
+    }
+
+    .aboutMe img {
+        border-radius: 50%;
+        width: 70%;
+    }
+}

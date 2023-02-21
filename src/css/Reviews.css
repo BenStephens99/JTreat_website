@@ -1,0 +1,24 @@
+.reviews .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.reviews .section-content p { 
+    max-width: 25em;
+}
+
+.reviews .uppercase-text {
+    font-size: 0.65em;
+}
+
+@media screen and (max-width: 650px) {
+    .reviews .section-content {
+        width: 90%;
+        font-size: 1.2em;
+    }
+}
