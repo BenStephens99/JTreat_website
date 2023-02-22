@@ -18,11 +18,16 @@
 }
 
 .booking button {
-    color: rgb(124, 124, 124);
+    color: white;
+    padding: 1em 5em;
+    background-color: var(--red);
 }
 
 .booking button:hover {
-    color: white;
+    color: rgb(143, 143, 143);
+    padding: 1em 3em;
+    background-color: rgb(255, 255, 255);
+    
 }
 
 @media screen and (max-width: 650px) {

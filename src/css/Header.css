@@ -22,7 +22,7 @@ header {
 .nav-icon {
     display: none;
     position: absolute;
-    top: 0.75em;
+    top: 0.55em;
     right: 1em;
     width: 40px;
     -webkit-transform: rotate(0deg);
@@ -110,7 +110,7 @@ header {
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         top: -100px;
-        height: 3em;
+        height: 2.5em;
         padding: 0;
         transition: 500ms;
     }

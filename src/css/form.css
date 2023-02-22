@@ -33,8 +33,17 @@ textarea {
 }
 
 form button {
-    color: rgb(109, 109, 109);
-    margin: 2em;
+    color: white;
+    padding: 1em 5em;
+    background-color: var(--red);
+    margin-top: 2em;
+}
+
+form button:hover {
+    color: rgb(143, 143, 143);
+    padding: 1em 3em;
+    background-color: rgb(255, 255, 255);
+    
 }
 
 @media screen and (max-width: 650px) {
