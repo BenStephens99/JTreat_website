@@ -17,16 +17,16 @@ function App() {
         <Section
           className="reviews"
           sectionContent={<>
-            <div class="review">
+            <div className="review">
               <p>"Amazing treatment, very satisfying and Beneficial.
                 Would highly recommend for aches and pains."</p>
               <p> &#11088; &#11088; &#11088; &#11088; &#11088; </p>
             </div>
-            <div class="review">
+            <div className="review">
               <p>"Great advice, friendly and helped with some shoulder/neck issues!"</p>
               <p> &#11088; &#11088; &#11088; &#11088; &#11088; </p>
             </div>
-            <div class="review">
+            <div className="review">
               <p>"Fair play, thought I got loose on the weekends but not as loose as
                 my quad was after seeing Jack. Service with a smile. Would recommend"</p>
               <p> &#11088; &#11088; &#11088; &#11088; &#11088; </p>
@@ -55,10 +55,10 @@ function App() {
           sectionContent={
             <form action="https://formspree.io/f/xbjerogk" method="POST">
               <fieldset>
-                <div class="textBoxes">
+                <div className="textBoxes">
                   <input type="text" name="name" id="name" placeholder="Name" required />
                   <input type="email" name="email" id="email" placeholder="Email" />
-                  <input type="tel" name="tel" id="tel" tel placeholder="Phone" />
+                  <input type="tel" name="tel" id="tel" placeholder="Phone" />
                 </div>
                 <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
               </fieldset>
@@ -71,7 +71,7 @@ function App() {
           className="find"
           sectionContent={
             <>
-               <iframe
+               <iframe title='map'
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15421.489527495614!2d-3.1411936831092953!3d51.64246599930709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e201f52f8bd05%3A0x653f369623446c16!2sExert%20Fitness!5e0!3m2!1sen!2suk!4v1669923662195!5m2!1sen!2suk"
                     allowFullScreen="" loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade">

@@ -95,7 +95,7 @@ button:hover {
 footer {
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.619);
   color: white;
   padding: 2em 0;
 }
